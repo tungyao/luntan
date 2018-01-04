@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HOME</title>
+    {% include('layout/source.html') %}
+{#    <script src="../../static/js/jquery-3.2.1.js"></script>#}
+{#    <script src="../../static/js/bootstrap.js"></script>#}
+{#    <script src="../../static/js/yd_fn.js"></script>#}
+{#    <script src="../../static/js/axios.js"></script>#}
+{#    <script src="../../static/js/app.js"></script>#}
+{#    <link rel="stylesheet" href="../../static/css/bootstrap.css">#}
+{#    <link rel="stylesheet" href="../../static/css/font-awesome.css">#}
+{#    <link rel="stylesheet" href="../../static/css/animate.css">#}
+{#    <link rel="stylesheet" href="../../static/css/app.css">#}
+{#    <link rel="stylesheet" href="../../static/css/style.css">#}
+{##}
+{#    <script src="../../static/js/sidebar-menu.js"></script>#}
+    <script src="/static/js/sidebar-menu.js"></script>
+</head>
+<body style="background-image:url('/static/img/home.svg');background-size: cover;">
+<div class="container">
+    {% include("layout/nav.html") %}
+    <div class="row">
+        <div class="col-md-2">
+            <div class="slider_menu hidden-xs">
+                <div class="slider_menu_item">
+                    <a>个人信息</a>
+                    <ul class="list-group data-switch">
+                        <li class="list-group-item" data-switch="#personal-information" role="button">概述</li>
+                    </ul>
+                </div>
+                <div class="slider_menu_item">
+                    <a>帖子管理</a>
+                    <ul class="list-group data-switch">
+                        <li class="list-group-item" data-switch="#test-check-two">已发帖子</li>
+                        <li class="list-group-item" data-switch="#test-check-three">已发评论</li>
+                        <li class="list-group-item" data-switch="#test-check-four">回收站</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="switch_panel">
+                <div class="switch_panel" id="personal-information">
+                     <div class="col-md-3 hidden-xs"></div>
+                    <div class="col-md-6 " style="background-color: #777777">
+                        <div class="col-md-4 hidden-xs"></div>
+                        <div  class="col-md-4">
+                            <div class="img-circle img-responsive head_over_change_box" style="background-color:wheat;width: 100%;height: 100px;display: none">
+                                <br>
+                                <center>
+                                    <i class="fa fa-photo fa-3x">
+
+                                    </i>
+                                    <br>
+                                    <span class="select_head" role="button">选取图片</span>
+                                    <form class="upload_head_form" style="display: none" enctype="multipart/form-data">
+                                        <input type="file" name="head">
+                                    </form>
+                                </center>
+                            </div>
+                            <img src="/get/{{ user['head'] }}?t=head" alt="求真相" class="img-responsive img-circle head_over" style="margin: auto auto">
+                            <a class="col-xs-12" role="button" href="javascript:change_head()" style="color: whitesmoke">
+                                <center class="head_click_status">
+                                    换个头像
+                                </center>
+                            </a>
+
+                        </div>
+                        <div class="col-md-3 hidden-xs"></div>
+                        <br>
+                        <div class="col-md-12">
+                            <center>
+                            <h3>{{ user['name'] }}</h3>
+
+                            </center>
+                        </div>
+                    </div>
+                     <div class="col-md-4 hidden-xs"></div>
+                </div>
+                <div class="switch_panel" id="test-check-two">
+                   <h3>你已经发了<span>{{ post_num or 0 }}</span>条</h3>
+
+                </div>
+                <div class="switch_panel" id="test-check-three">
+                    test-check-three
+                    <h1 style="font-size: 5em">three</h1>
+
+                </div>
+                <div class="switch_panel" id="test-check-four">
+                    test-check-four
+                    <h1 style="font-size: 5em">four</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    $('.slider_menu').slider_menu();
+    $('.switch_panel').switch_panel();
+    $('.head_over_change_box').height($('.head_over').height());
+    select_heads();
+</script>
+
+
+</body>
+</html>

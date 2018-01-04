@@ -1,0 +1,95 @@
+.yo_slider_bar {
+  position: relative;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 3px;
+  transition: color 0.2s ease, background-color 0.2s ease, transform 0.3s ease;
+}
+.yo_slider_bar:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: all 1s ease-in-out;
+}
+.yo_slider_bar:hover:after {
+  background-color: #fff;
+}
+.yo_slider_bar:hover {
+  transform: rotateY(45deg);
+}
+.yo_ribbon_top_right {
+  border-right: 6px solid transparent;
+  right: -6px;
+  top: 0;
+}
+.yo_ribbon_top_right > span {
+  display: inline-block;
+  position: absolute;
+  width: 80px;
+  height: 30px;
+  background-color: gold;
+  margin-top: 3.3%;
+  margin-left: -1.5%;
+}
+.yo_chocolate {
+  transition: all 2s;
+  display: block;
+  animation: chocolate 2s ease-in-out forwards;
+}
+@keyframes chocolate {
+  0% {
+    top: -100%;
+    width: 0;
+    height: 0;
+  }
+  25% {
+    width: 100%;
+    height: 10%;
+  }
+  50% {
+    top: 0;
+    width: 100%;
+    height: 20%;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+.yo_pause {
+  animation-play-state: unset;
+}
+@keyframes list_lengthen {
+  from {
+    background-color: black;
+    transform: rotateY(-40deg);
+  }
+  to {
+    background-color: #222222;
+    transform: rotateY(0deg);
+    width: 100%;
+  }
+}
+@keyframes border_running {
+  from {
+    width: 30%;
+  }
+  to {
+    width: 100%;
+    display: block;
+  }
+}
+.from_right_to_left {
+  animation: from_right_to_lefts 1s forwards ease-out;
+}
+@keyframes from_right_to_lefts {
+  from {
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}

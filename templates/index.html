@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>首页</title>
+    {% include("layout/source.html")%}
+    <link rel="stylesheet" href="/static/css/animate.css">
+</head>
+<body class="index_bgc">
+<div class="container-fluid" >
+{% include('layout/nav.html') %}
+    <div class="row">
+        <div class="col-md-3 hidden-xs">&nbsp;</div>
+        <div class="col-md-6 col-xs-12 ">
+            <ul class="list-group f_news_show box_shadow223">
+                <li class="list-group-item col-md-12 col-xs-12">
+{#                    <div class="col-md-12 col-xs-12 ">#}
+{#                        <a href="/p/id" class="col-md-12 col-xs-12">asdfhjfhsahieh</a>#}
+{#                        <p style="overflow-wrap: break-word" class="col-md-12 col-xs-12">asdhasioudhahfd#}
+{#                            adhauisghduiagsduiagisudgiuwifdiohffuasfafiudghi</p>#}
+{#                        <img style="" src="/get/"#}
+{#                             class="img-responsive col-md-5 col-xs-9">#}
+{#                        <div class="hidden-xs" style="float: right">2017-10-10 02:30</div>#}
+{#                    </div>#}
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-3 hidden-xs">&nbsp;</div>
+    </div>
+</div>
+<script>
+get_news();
+    slider_bar('.f_news_show');
+    create_write_news_box();
+    create_write_news_box_inner();
+</script>
+</body>
+</html>

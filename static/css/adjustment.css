@@ -1,0 +1,26 @@
+.create_write_news_box_inner {
+  background-color: #CCCCCC;
+  box-shadow: 2px 2px 3px #aaaaaa;
+}
+.box_shadow223 {
+  box-shadow: 2px 2px 3px black;
+}
+.box_shadow223 > .list-group-item {
+  border: 5px solid wheat;
+  margin-bottom: 5px;
+}
+.index_bgc {
+  background-color: #333333;
+}
+.yo_wheat {
+  color: wheat;
+}
+.yo_333 {
+  color: #333333;
+}
+.yo_3333 {
+  background-color: wheat;
+}
+label {
+  color: wheat;
+}
