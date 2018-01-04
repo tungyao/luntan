@@ -6,7 +6,10 @@
 * 提交服务器运行
 
 >2017.12.23
-* 对网站颜色进行大规模修改<br>
+* 对网站颜色进行大规模修改
+* 完善功能
+  * 私钥加密
+  * csrf防护
 ## 环境要求
  * python3.4 or later
  * chrome kernel borwser or fire fox kernel borwser
