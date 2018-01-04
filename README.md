@@ -11,4 +11,10 @@
  * python3.4 or later
  * chrome kernel borwser or fire fox kernel borwser
 ## 安装
-* Use git clone to local from 
+* Use git clone to local from [Github](https://github.com/tungyao/school_news)
+* Start it using python
+~~~
+python manage.py
+~~~
+### 贡献者
+* Tung Yao
