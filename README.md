@@ -14,7 +14,7 @@
 * Use git clone to local from [Github](https://github.com/tungyao/school_news)
 * Start it using python
 ~~~
-python manage.py
+python manage.pyc
 ~~~
 ### 贡献者
 * Tung Yao
