@@ -1,5 +1,7 @@
 # school news
 ## 更新
+>2018.1.15
+* 开源
 >2017.12.28
 * 完成测试
 * 源码低级加密化
@@ -17,7 +19,7 @@
 * Use git clone to local from [Github](https://github.com/tungyao/school_news)
 * Start it using python
 ~~~
-python manage.pyc
+python manage.py
 ~~~
 ### 贡献者
 * Tung Yao

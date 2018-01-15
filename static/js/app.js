@@ -411,7 +411,9 @@ function go_it_comment() {
             headers: {'CSRF-TOKEN': $('meta[name="csrf_token"]').attr('content')},
         }).then(function (value) {
             if(value.data.status=='success'){
-                location.reload()
+                var data = {0:{
+
+                }}
             }else {
                 alert('failed')
             }
