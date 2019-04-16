@@ -1,4 +1,4 @@
-# school news
+# new ink
 ## 更新
 >2018.1.15
 * 开源
